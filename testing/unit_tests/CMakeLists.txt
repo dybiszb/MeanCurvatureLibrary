@@ -1,0 +1,6 @@
+INCLUDE_DIRECTORIES(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
+ADD_EXECUTABLE(RunUnitTests test_project1.cpp)
+
+TARGET_LINK_LIBRARIES(RunUnitTests gtest gtest_main)
+TARGET_LINK_LIBRARIES(RunUnitTests mean_curvature_lib)
