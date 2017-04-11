@@ -1,0 +1,210 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ee7c7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ee7c7.dir/build.make CMakeFiles/cmTC_ee7c7.dir/build
+make[1]: Entering directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ee7c7.dir/src.cxx.o
+/usr/bin/c++     -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -DCOMPILER_SUPPORT_Wshorten64to32 -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_ee7c7.dir/src.cxx.o -c /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wshorten-64-to-32'
+CMakeFiles/cmTC_ee7c7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_ee7c7.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_ee7c7.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ee7c7/fast' failed
+make: *** [cmTC_ee7c7/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
+Change Dir: /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7f926/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7f926.dir/build.make CMakeFiles/cmTC_7f926.dir/build
+make[1]: Entering directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7f926.dir/src.cxx.o
+/usr/bin/c++     -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wenumconversion -Werror   -Wenum-conversion -o CMakeFiles/cmTC_7f926.dir/src.cxx.o -c /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wenum-conversion'
+CMakeFiles/cmTC_7f926.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_7f926.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_7f926.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7f926/fast' failed
+make: *** [cmTC_7f926/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8696d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8696d.dir/build.make CMakeFiles/cmTC_8696d.dir/build
+make[1]: Entering directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8696d.dir/src.cxx.o
+/usr/bin/c++     -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wcpp11extensions -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_8696d.dir/src.cxx.o -c /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wc++11-extensions'
+CMakeFiles/cmTC_8696d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8696d.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_8696d.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8696d/fast' failed
+make: *** [cmTC_8696d/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_78248/fast"
+/usr/bin/make -f CMakeFiles/cmTC_78248.dir/build.make CMakeFiles/cmTC_78248.dir/build
+make[1]: Entering directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_78248.dir/src.cxx.o
+/usr/bin/c++     -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd981 -Werror   -wd981 -o CMakeFiles/cmTC_78248.dir/src.cxx.o -c /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd981'
+CMakeFiles/cmTC_78248.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_78248.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_78248.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_78248/fast' failed
+make: *** [cmTC_78248/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_00533/fast"
+/usr/bin/make -f CMakeFiles/cmTC_00533.dir/build.make CMakeFiles/cmTC_00533.dir/build
+make[1]: Entering directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_00533.dir/src.cxx.o
+/usr/bin/c++     -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd2304 -Werror   -wd2304 -o CMakeFiles/cmTC_00533.dir/src.cxx.o -c /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd2304'
+CMakeFiles/cmTC_00533.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_00533.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_00533.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_00533/fast' failed
+make: *** [cmTC_00533/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_28074/fast"
+/usr/bin/make -f CMakeFiles/cmTC_28074.dir/build.make CMakeFiles/cmTC_28074.dir/build
+make[1]: Entering directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_28074.dir/src.cxx.o
+/usr/bin/c++     -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_STRICTANSI -Werror   -strict-ansi -o CMakeFiles/cmTC_28074.dir/src.cxx.o -c /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-strict-ansi'
+CMakeFiles/cmTC_28074.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_28074.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_28074.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_28074/fast' failed
+make: *** [cmTC_28074/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
+Change Dir: /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c03e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c03e.dir/build.make CMakeFiles/cmTC_3c03e.dir/build
+make[1]: Entering directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3c03e.dir/src.cxx.o
+/usr/bin/c++     -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_Qunusedarguments -Werror   -Qunused-arguments -o CMakeFiles/cmTC_3c03e.dir/src.cxx.o -c /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Qunused-arguments'
+CMakeFiles/cmTC_3c03e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3c03e.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_3c03e.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3c03e/fast' failed
+make: *** [cmTC_3c03e/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -v
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: 
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c
+
+The output was:
+No such file or directory
+
+
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+Compiler: CMAKE_Fortran_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -fpp
+
+The output was:
+No such file or directory
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_98df8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_98df8.dir/build.make CMakeFiles/cmTC_98df8.dir/build
+make[1]: Entering directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98df8.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_98df8.dir/CheckSymbolExists.c.o   -c /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_98df8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98df8.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_98df8.dir/CheckSymbolExists.c.o  -o cmTC_98df8 -rdynamic 
+CMakeFiles/cmTC_98df8.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_98df8.dir/build.make:97: recipe for target 'cmTC_98df8' failed
+make[1]: *** [cmTC_98df8] Error 1
+make[1]: Leaving directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_98df8/fast' failed
+make: *** [cmTC_98df8/fast] Error 2
+
+File /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2b718/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2b718.dir/build.make CMakeFiles/cmTC_2b718.dir/build
+make[1]: Entering directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2b718.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2b718.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2b718
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b718.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2b718.dir/CheckFunctionExists.c.o  -o cmTC_2b718 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2b718.dir/build.make:97: recipe for target 'cmTC_2b718' failed
+make[1]: *** [cmTC_2b718] Error 1
+make[1]: Leaving directory '/home/dybisz/Downloads/eigen/eigen-eigen-da9b4e14c255/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2b718/fast' failed
+make: *** [cmTC_2b718/fast] Error 2
+
+

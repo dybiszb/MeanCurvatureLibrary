@@ -5,7 +5,7 @@ project(mean_curvature_lib)
 #-------------------------------------------------------------------------------
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-find_package(LIBIGL QUIET)
+find_package(LIBIGL REQUIRED)
 
 if (NOT LIBIGL_FOUND)
     message(FATAL_ERROR "libigl not found --- You can download it using: \n git clone --recursive https://github.com/libigl/libigl.git ${PROJECT_SOURCE_DIR}/../libigl")
@@ -28,10 +28,10 @@ endif (OPENMESH_FOUND)
 add_subdirectory("${LIBIGL_INCLUDE_DIR}/../shared/cmake" "libigl")
 
 # Prepare the build environment
-include_directories(${LIBIGL_INCLUDE_DIRS} external/eigen lib)
+include_directories(${LIBIGL_INCLUDE_DIRS} external/eigen external/)
 add_definitions(${LIBIGL_DEFINITIONS})
 
-FILE(GLOB LIB_SOURCE_FILES lib/*.cpp)
+FILE(GLOB LIB_SOURCE_FILES *.cpp)
 
 add_library(mean_curvature_lib ${LIB_SOURCE_FILES} ${LIBIGL_EXTRA_SOURCES})
 target_link_libraries(mean_curvature_lib ${LIBIGL_LIBRARIES} ${LIBIGL_EXTRA_LIBRARIES} ${OPENMESH_LIBRARIES})

@@ -37,6 +37,6 @@ TEST_F(MeanCurvatureSolverTest, MethodBarDoesAbc) {
     int i = 1;
     EXPECT_EQ(1, i);
 
-    mUnifromMCS->Execute(mSolution);
+    mUnifromMCS->Execute(mSolution, mBunnyPath);
 
 }
