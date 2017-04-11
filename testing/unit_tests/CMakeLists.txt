@@ -1,4 +1,4 @@
-INCLUDE_DIRECTORIES(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+INCLUDE_DIRECTORIES(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR} ../../code)
 
 ADD_EXECUTABLE(RunUnitTests test_project1.cpp)
 

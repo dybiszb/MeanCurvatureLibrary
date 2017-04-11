@@ -1,7 +1,8 @@
 #ifndef PROJECT1_H_
 #define PROJECT1_H_
 
-#include <iostream> // IO access
+#include <iostream>
+#include <OpenMesh/Core/IO/MeshIO.hh>
 
 class Project1 {
 
@@ -16,4 +17,4 @@ public:
 
 void independentMethod(int &i);
 
-#endif /* PROJECT1_H_ */
+#endif

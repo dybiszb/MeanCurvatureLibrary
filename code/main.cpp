@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    cout << "dod stuff" << endl;
+    cout << "do stuff" << endl;
     int x = 4;
     cout << x << endl;
     independentMethod(x);
