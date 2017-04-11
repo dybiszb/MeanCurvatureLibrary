@@ -6,7 +6,5 @@
 using namespace std;
 
 int main() {
-    Eigen::MatrixXd meanCurv;
-    mcurv::MeanCurvatureSolver mcs(mcurv::uniformLBOperator);
-    mcs.Execute(meanCurv);
+    return 0;
 }

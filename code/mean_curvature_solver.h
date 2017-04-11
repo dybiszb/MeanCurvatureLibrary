@@ -4,7 +4,6 @@
 #include <memory>
 #include <Eigen/Core>
 #include "types_definitions.h"
-#include "external/libigl/include/igl/readOFF.h"
 
 namespace mcurv {
 
@@ -14,7 +13,6 @@ namespace mcurv {
         void Execute(Eigen::MatrixXd &solution, const std::string& path);
     private:
         const SolverStrategyT mStrategy;
-        VerticesT mVertices;
     };
 }
 
