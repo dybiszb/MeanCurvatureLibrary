@@ -28,12 +28,13 @@ endif (OPENMESH_FOUND)
 add_subdirectory("${LIBIGL_INCLUDE_DIR}/../shared/cmake" "libigl")
 
 # Prepare the build environment
-include_directories(${LIBIGL_INCLUDE_DIRS} external/eigen)
+include_directories(${LIBIGL_INCLUDE_DIRS} external/eigen lib)
 add_definitions(${LIBIGL_DEFINITIONS})
 
-set(LIB_SOURCE_FILES project1.cpp)
+FILE(GLOB LIB_SOURCE_FILES lib/*.cpp)
+
 add_library(mean_curvature_lib ${LIB_SOURCE_FILES} ${LIBIGL_EXTRA_SOURCES})
 target_link_libraries(mean_curvature_lib ${LIBIGL_LIBRARIES} ${LIBIGL_EXTRA_LIBRARIES} ${OPENMESH_LIBRARIES})
 
-add_executable(MeanCurvatureApp main.cpp)
+add_executable(MeanCurvatureApp app/main.cpp)
 TARGET_LINK_LIBRARIES(MeanCurvatureApp mean_curvature_lib)
