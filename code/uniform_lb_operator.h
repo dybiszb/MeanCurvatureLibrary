@@ -6,7 +6,27 @@
 
 namespace mcurv {
 
-    void uniformLBOperator(Eigen::MatrixXd solution);
+    void uniformLBOperatorStrategy(Eigen::MatrixXd solution,
+                                   const VerticesT &vertices,
+                                   const NormalsT &normals,
+                                   const NeighborhoodT &neighbours,
+                                   OMMeshT &omMesh);
+
+    /**
+     * Calcuates Laplace-Beltrami operator for provided vertices and their
+     * neighbourhoods.
+     *
+     * @tparam Derived
+     * @param coordinates Model's vertices.
+     * @param neighbours  Model's neighbourhood. Not 'const' since [] operator
+     *                    of the map is not 'const'.
+     * @return            Sparse matrix with Laplace-Beltrami operator with
+     *                    uniform discretization.
+     */
+    template<typename Derived>
+    SparseMatT
+    calculateUniformLBOperator(Eigen::MatrixBase<Derived> const &coordinates,
+                               NeighborhoodT &neighbours);
 
 }
 

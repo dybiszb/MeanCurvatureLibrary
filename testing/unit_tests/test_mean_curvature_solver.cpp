@@ -2,13 +2,12 @@
 #include "gtest/gtest.h"
 #include <Eigen/Core>
 #include <memory>
-#include "uniform_lb_operator.h"
 #include "mean_curvature_solver.h"
+#include "uniform_lb_operator.h"
 
 class MeanCurvatureSolverTest : public ::testing::Test {
 protected:
-    MeanCurvatureSolverTest() : mUnifromMCS(
-            new mcurv::MeanCurvatureSolver(mcurv::uniformLBOperator)),
+    MeanCurvatureSolverTest() : mUnifromMCS(mcurv::uniformLBOperatorStrategy),
                                 mBunnyPath("./res/bunny.off") {
     }
 
@@ -30,13 +29,13 @@ protected:
 
     Eigen::MatrixXd mSolution;
     const std::string mBunnyPath;
-    std::unique_ptr<mcurv::MeanCurvatureSolver> mUnifromMCS;
+    mcurv::MeanCurvatureSolver mUnifromMCS;
 };
 
-TEST_F(MeanCurvatureSolverTest, MethodBarDoesAbc) {
-    int i = 1;
-    EXPECT_EQ(1, i);
+TEST_F(MeanCurvatureSolverTest, WrongPathForExecute) {
+    ASSERT_THROW(mUnifromMCS.Execute(mSolution, "wrong_path"), std::runtime_error);
+}
 
-    mUnifromMCS->Execute(mSolution, mBunnyPath);
-
+TEST_F(MeanCurvatureSolverTest, Exec) {
+    mUnifromMCS.Execute(mSolution, mBunnyPath);
 }

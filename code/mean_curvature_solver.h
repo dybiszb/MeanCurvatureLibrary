@@ -3,6 +3,7 @@
 
 #include <memory>
 #include <Eigen/Core>
+#include "off_model.h"
 #include "types_definitions.h"
 
 namespace mcurv {

@@ -8,5 +8,7 @@ MeanCurvatureSolver::MeanCurvatureSolver(const SolverStrategyT &strategy)
 
 void MeanCurvatureSolver::Execute(Eigen::MatrixXd &solution,
                                   const std::string &path) {
-    mStrategy(solution);
+    OFFModel model(path);
+    mStrategy(solution, model.GetVertices(), model.GetNormals(),
+              model.GetNeighborhood(), model.GetOpenMeshModelStructure());
 }
