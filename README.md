@@ -40,7 +40,7 @@ Note: Sources have been compiled and checked only on Ubuntu 16.04 64b with gcc 5
    ```
    make
     ```
-
+   and ignore all gcc warnings (Eigen has some deprecated binding functions) :).
 ## Usage
 Single executable for the tests is located at:
 ```
