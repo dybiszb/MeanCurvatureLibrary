@@ -47,7 +47,7 @@ namespace mcurv {
     /**
      * TODO
      */
-    using TripletT   = Eigen::Triplet<double>;
+    using TripletT = Eigen::Triplet<double>;
 
     /**
      * TODO
