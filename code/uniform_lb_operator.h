@@ -14,7 +14,7 @@ namespace mcurv {
                                    OMMeshT &omMesh);
 
     /**
-     * Calcuates Laplace-Beltrami operator for provided vertices and their
+     * Calculates Laplace-Beltrami operator for provided vertices and their
      * neighbourhoods.
      *
      * @tparam Derived

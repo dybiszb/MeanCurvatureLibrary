@@ -51,7 +51,12 @@ namespace mcurv {
          */
         const NeighborhoodT  &GetNeighborhood();
 
-        // TODO: check const + docs
+        /**
+         * Retrieve OpenMesh structure of loaded model.
+         *
+         * @return  Please reffer to description of OMMeshT type in
+         *          types_definitions.h file.
+         */
         OMMeshT& GetOpenMeshModelStructure();
 
     private:

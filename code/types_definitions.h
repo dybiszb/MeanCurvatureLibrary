@@ -37,7 +37,8 @@ namespace mcurv {
     using NeighborhoodT = std::map<int, std::set<size_t>>;
 
     /**
-     * TODO
+     * A function that will calculate a specific type of Laplace-Beltrami
+     * operator
      */
     using SolverStrategyT = std::function<void(Eigen::MatrixXd& solution,
                                                const VerticesT &vertices,
@@ -45,12 +46,12 @@ namespace mcurv {
                                                const NeighborhoodT &neighbours,
                                                OMMeshT &omMesh)>;
     /**
-     * TODO
+     * Eigen's triplet structure for sparse matrix.
      */
     using TripletT = Eigen::Triplet<double>;
 
     /**
-     * TODO
+     * Eigen's sparse matrix structure.
      */
     using SparseMatT = Eigen::SparseMatrix<double>;
 
