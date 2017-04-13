@@ -1,12 +1,11 @@
-#ifndef UNIFORM_LB_OPERATOR_H
-#define UNIFORM_LB_OPERATOR_H
+#ifndef COTANGENT_LB_OPERATOR_H
+#define COTANGENT_LB_OPERATOR_H
 
-#include <iostream>
 #include "types_definitions.h"
 
 namespace mcurv {
 
-    void uniformLBOperatorStrategy(Eigen::MatrixXd solution,
+    void cotangentLBOperatorStrategy(Eigen::MatrixXd solution,
                                    const VerticesT &vertices,
                                    const NormalsT &normals,
                                    const NeighborhoodT &neighbours,
@@ -14,20 +13,21 @@ namespace mcurv {
 
     /**
      * Calcuates Laplace-Beltrami operator for provided vertices and their
-     * neighbourhoods.
+     * one-ring neighbourhoods.
      *
      * @tparam Derived
-     * @param coordinates Model's vertices.
-     * @param neighbours  Model's neighbourhood. Not 'const' since [] operator
-     *                    of the map is not 'const'.
+     * @param coordinates Model's vertices
+     * @param omMesh      OpenMesh's mesh structure.
      * @return            Sparse matrix with Laplace-Beltrami operator with
-     *                    uniform discretization.
+     *                    cotangent discretization.
      */
     template<typename Derived>
-    SparseMatT
-    uniformLBOperator(Eigen::MatrixBase<Derived> const &coordinates,
-                      NeighborhoodT &neighbours);
-
+    SparseMatT 
+    cotangentLBOperator(
+            Eigen::MatrixBase<Derived> const &coordinates,
+            const OMMeshT &omMesh);
+    
 }
+
 
 #endif

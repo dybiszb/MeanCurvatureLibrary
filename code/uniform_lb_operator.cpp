@@ -9,7 +9,7 @@ namespace mcurv {
                                    const NeighborhoodT &neighbours,
                                    OMMeshT &omMesh) {
         Eigen::MatrixXd LB  = /* TODO: resolve const conflict*/
-                calculateUniformLBOperator(vertices,(NeighborhoodT &) neighbours) * vertices;
+                uniformLBOperator(vertices, (NeighborhoodT &) neighbours) * vertices;
 
         Eigen::MatrixXd invertedSigns =
                 (LB * normals.transpose()).diagonal() * -1.0;
@@ -21,7 +21,7 @@ namespace mcurv {
 
     // -------------------------------------------------------------------------
     template<typename Derived>
-    SparseMatT calculateUniformLBOperator(
+    SparseMatT uniformLBOperator(
             Eigen::MatrixBase<Derived> const &coordinates,
             NeighborhoodT &neighbours) {
 

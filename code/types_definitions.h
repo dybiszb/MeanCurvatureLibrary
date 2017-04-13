@@ -2,6 +2,7 @@
 #define TYPES_DEFINITIONS_H
 
 #include <Eigen/Core>
+#include <Eigen/Sparse>
 #include <functional>
 #include <OpenMesh/Core/Mesh/TriMesh_ArrayKernelT.hh>
 #include <map>
@@ -52,6 +53,17 @@ namespace mcurv {
      * TODO
      */
     using SparseMatT = Eigen::SparseMatrix<double>;
+
+    /**
+     * The procedure used only as unary functor for Eigen's matrix.
+     *
+     * @param x ----
+     * @return  -1.0 if provided value is negative and 1.0 when it is >= 0
+     */
+    static double calculateMultiplier(const double x) {
+        return (x < 0) ? -1.0 : 1.0;
+    }
+
 }
 
 #endif
