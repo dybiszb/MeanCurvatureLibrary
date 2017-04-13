@@ -39,7 +39,7 @@ namespace mcurv {
     /**
      * TODO
      */
-    using SolverStrategyT = std::function<void(Eigen::MatrixXd solution,
+    using SolverStrategyT = std::function<void(Eigen::MatrixXd& solution,
                                                const VerticesT &vertices,
                                                const NormalsT &normals,
                                                const NeighborhoodT &neighbours,
@@ -53,16 +53,6 @@ namespace mcurv {
      * TODO
      */
     using SparseMatT = Eigen::SparseMatrix<double>;
-
-    /**
-     * The procedure used only as unary functor for Eigen's matrix.
-     *
-     * @param x ----
-     * @return  -1.0 if provided value is negative and 1.0 when it is >= 0
-     */
-    static double calculateMultiplier(const double x) {
-        return (x < 0) ? -1.0 : 1.0;
-    }
 
 }
 

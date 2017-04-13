@@ -22,7 +22,18 @@ TEST_F(MeanCurvatureSolverTest, WrongPathForExecute) {
     ASSERT_THROW(mCotangentMCS.Execute(mSolution, "wrong_path"), std::runtime_error);
 }
 
-TEST_F(MeanCurvatureSolverTest, Exec) {
+TEST_F(MeanCurvatureSolverTest, ExecUniform) {
     mUnifromMCS.Execute(mSolution, mBunnyPath);
+
+    EXPECT_NEAR(mSolution(0,0), 0.0065769, 0.001);
+    EXPECT_NEAR(mSolution(1,0), -0.00329001, 0.001);
+    EXPECT_NEAR(mSolution(2,0), -0.00750467, 0.001);
+}
+
+TEST_F(MeanCurvatureSolverTest, ExecCotangent) {
     mCotangentMCS.Execute(mSolution, mBunnyPath);
+
+    EXPECT_NEAR(mSolution(0,0), 66.2739, 0.001);
+    EXPECT_NEAR(mSolution(1,0), -555.572, 0.001);
+    EXPECT_NEAR(mSolution(2,0), -76.9057, 0.001);
 }

@@ -3,7 +3,7 @@
 namespace mcurv {
 
     // -------------------------------------------------------------------------
-    void cotangentLBOperatorStrategy(Eigen::MatrixXd solution,
+    void cotangentLBOperatorStrategy(Eigen::MatrixXd& solution,
                                    const VerticesT &vertices,
                                    const NormalsT &normals,
                                    const NeighborhoodT &neighbours,

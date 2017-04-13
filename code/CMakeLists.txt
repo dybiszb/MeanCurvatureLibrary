@@ -31,8 +31,12 @@ add_subdirectory("${LIBIGL_INCLUDE_DIR}/../shared/cmake" "libigl")
 include_directories(${LIBIGL_INCLUDE_DIRS} external/eigen external/)
 add_definitions(${LIBIGL_DEFINITIONS})
 
+# Supress depraceated warning from Eigen
+SET(GCC_DEPRECATED_EIGEN_FLAG "-Wno-deprecated-declarations")
+SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${GCC_DEPRECATED_EIGEN_FLAG}" )
+
 #FILE(GLOB LIB_SOURCE_FILES *.cpp)
-SET(LIB_SOURCE_FILES off_model.cpp cotangent_lb_operator.cpp uniform_lb_operator.cpp mean_curvature_solver.cpp)
+SET(LIB_SOURCE_FILES off_model.cpp cotangent_lb_operator.cpp uniform_lb_operator.cpp mean_curvature_solver.cpp utilities.cpp)
 add_library(mean_curvature_lib ${LIB_SOURCE_FILES} ${LIBIGL_EXTRA_SOURCES})
 target_link_libraries(mean_curvature_lib ${LIBIGL_LIBRARIES} ${LIBIGL_EXTRA_LIBRARIES} ${OPENMESH_LIBRARIES})
 

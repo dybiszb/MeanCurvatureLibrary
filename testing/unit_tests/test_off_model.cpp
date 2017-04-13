@@ -7,24 +7,7 @@ protected:
     OffModelTest() : mBunnyPath("./res/bunny.off"),
                      mModel(mBunnyPath),
                      mNumberOfVertices(3485),
-                     mNumberOfFaces(6966) {
-    }
-
-    virtual ~OffModelTest() {
-        // You can do clean-up work that doesn't throw exceptions here.
-    }
-
-    // If the constructor and destructor are not enough for setting up
-    // and cleaning up each test, you can define the following methods:
-    virtual void SetUp() {
-        // Code here will be called immediately after the constructor (right
-        // before each test).
-    }
-
-    virtual void TearDown() {
-        // Code here will be called immediately after each test (right
-        // before the destructor).
-    }
+                     mNumberOfFaces(6966) { }
 
     const std::string mBunnyPath;
     mcurv::OFFModel mModel;
@@ -68,19 +51,14 @@ TEST_F(OffModelTest, CheckFaces) {
 
 TEST_F(OffModelTest, CheckNormals) {
     const mcurv::NormalsT n = mModel.GetNormals();
-//    std::cout << n << std::endl;
+
     // Check if number of loaded normals equals number of vertices
     EXPECT_EQ(mNumberOfVertices, n.rows());
 
     // Check first loaded normal
-//    EXPECT_EQ(-0.29688 , n(0, 0));
-//    EXPECT_EQ(0.630271  , n(0, 1));
-//    EXPECT_EQ( 0.717371, n(0, 2));
-
-//    // Check last loaded normal
-//    EXPECT_EQ(0.0469531 , n(mNumberOfVertices - 1, 0));
-//    EXPECT_EQ(-0.699443, n(mNumberOfVertices - 1, 1));
-//    EXPECT_EQ(-0.713144, n(mNumberOfVertices - 1, 2));
+    EXPECT_NEAR(n(0, 0), -0.29688, 0.001);
+    EXPECT_NEAR(n(0, 1), 0.630271, 0.001);
+    EXPECT_NEAR(n(0, 2), 0.717371, 0.001);
 }
 
 TEST_F(OffModelTest, CheckNeighborhood) {

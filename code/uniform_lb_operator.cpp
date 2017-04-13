@@ -3,7 +3,7 @@
 namespace mcurv {
 
     // -------------------------------------------------------------------------
-    void uniformLBOperatorStrategy(Eigen::MatrixXd solution,
+    void uniformLBOperatorStrategy(Eigen::MatrixXd& solution,
                                    const VerticesT &vertices,
                                    const NormalsT &normals,
                                    const NeighborhoodT &neighbours,
@@ -15,7 +15,7 @@ namespace mcurv {
                 (LB * normals.transpose()).diagonal() * -1.0;
         invertedSigns = invertedSigns.unaryExpr(&calculateMultiplier);
 
-        solution =  (LB.rowwise().norm()).cwiseProduct(invertedSigns);
+        solution = (LB.rowwise().norm()).cwiseProduct(invertedSigns);
     }
 
 

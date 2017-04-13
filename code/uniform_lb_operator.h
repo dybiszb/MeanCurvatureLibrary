@@ -3,10 +3,11 @@
 
 #include <iostream>
 #include "types_definitions.h"
+#include "utilities.h"
 
 namespace mcurv {
 
-    void uniformLBOperatorStrategy(Eigen::MatrixXd solution,
+    void uniformLBOperatorStrategy(Eigen::MatrixXd& solution,
                                    const VerticesT &vertices,
                                    const NormalsT &normals,
                                    const NeighborhoodT &neighbours,
